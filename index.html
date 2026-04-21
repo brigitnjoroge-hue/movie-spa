@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Finder SPA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🎬 Movie Finder</h1>
+  <button id="toggleTheme">🌙 Toggle Theme</button>
+</header>
+
+<main class="container">
+
+  <!-- SEARCH FORM -->
+  <form id="searchForm">
+    <input type="text" id="searchInput" placeholder="Search movies..." />
+    <button type="submit">Search</button>
+  </form>
+
+  <!-- MESSAGE -->
+  <div id="message"></div>
+
+  <!-- MOVIES RESULTS -->
+  <section id="movies"></section>
+
+</main>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+    <div id="modalDetails"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
